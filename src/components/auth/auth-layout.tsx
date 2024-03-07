@@ -1,25 +1,11 @@
 import React from 'react'
-import Image from "next/image"
-import Link from "next/link"
-
-import { cn } from "@/lib/utils"
-import { buttonVariants } from "@/components/ui/button"
 import { testimoial, toldBy } from '@/helper/constants'
 
 
-export default function AuthLayout({children, href, btnName, title, description}: Readonly<{children: React.ReactNode, btnName: string, title: string, description: string, href: string}> ) {
+export default function AuthLayout({children, title, description}: Readonly<{children: React.ReactNode, btnName: string, title: string, description: string, href: string}> ) {
   return (
     <>
       <div className="container fixed top-0 flex-col items-center h-screen justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
-        <Link
-          href={href || "/"}
-          className={cn(
-            buttonVariants({ variant: "ghost" }),
-            "absolute right-4 top-4 md:right-8 md:top-8"
-          )}
-        >
-          {btnName || ""}
-        </Link>
         <div className="relative hidden h-screen flex-col bg-muted p-10 text-white lg:flex dark:border-r">
           <div className="absolute inset-0 bg-zinc-900" />
           <div className="relative z-20 flex items-center text-lg font-medium">

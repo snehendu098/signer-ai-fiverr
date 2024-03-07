@@ -8,5 +8,5 @@ export const metadata: Metadata = {
 }
 
 export default function AuthenticationPage() {
-  return (<AuthLayout btnName="Sign Up" href="/signup" title="Login" description="Login to your account" ><UserAuthForm /></AuthLayout>)
+  return (<AuthLayout btnName="" href="/login" title="Login" description="Login to your account" ><UserAuthForm /></AuthLayout>)
 }

@@ -59,7 +59,6 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
               Password
             </Label>
             <Input id="passoword" value={password} placeholder="Password" onChange={e => setPassword(e.target.value)} type="password" disabled={isLoading} />
-            <Link href={"/forgot"} ><p className="font-semibold cursor-pointer text-xs mt-2 font-foreground" >Forgot Password ?</p></Link>
           </div>
           <Button disabled={!email || !password || isLoading}>
             {isLoading && (
