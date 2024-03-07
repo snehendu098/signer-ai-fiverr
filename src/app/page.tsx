@@ -1,15 +1,11 @@
 "use client"
 
-import Image from "next/image";
-import { redirect } from "next/navigation";
-import { authOptions } from "./utils/auth";
-import { getServerSession } from "next-auth";
 import { Button } from "@/components/ui/button";
-import { signOut, useSession } from "next-auth/react";
-import NavBar from "@/components/core/Navbar";
+import { useSession } from "next-auth/react";
+
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
-import Link from "next/link";
+
 import * as React from "react"
 import axios from "axios";
 import { toast } from "@/components/ui/use-toast";

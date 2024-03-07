@@ -1,0 +1,649 @@
+[debug] [2024-03-07T06:50:46.648Z] ----------------------------------------------------------------------
+[debug] [2024-03-07T06:50:46.650Z] Command:       /home/snehendu/.nvm/versions/node/v20.11.0/bin/node /home/snehendu/.nvm/versions/node/v20.11.0/bin/firebase deploy
+[debug] [2024-03-07T06:50:46.650Z] CLI Version:   13.4.0
+[debug] [2024-03-07T06:50:46.650Z] Platform:      linux
+[debug] [2024-03-07T06:50:46.650Z] Node Version:  v20.11.0
+[debug] [2024-03-07T06:50:46.650Z] Time:          Thu Mar 07 2024 12:20:46 GMT+0530 (India Standard Time)
+[debug] [2024-03-07T06:50:46.650Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-07T06:50:46.710Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T06:50:46.711Z] > authorizing via signed-in user (roysnehendu1029@gmail.com)
+[debug] [2024-03-07T06:50:46.711Z] [iam] checking project signer-ai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-07T06:50:46.712Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions [none]
+[debug] [2024-03-07T06:50:46.712Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:50:46.712Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:50:47.363Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions 200
+[debug] [2024-03-07T06:50:47.363Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:50:47.365Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai [none]
+[debug] [2024-03-07T06:50:47.958Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai 200
+[debug] [2024-03-07T06:50:47.958Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai {"projectId":"signer-ai","projectNumber":"644854045223","displayName":"signer-ai","name":"projects/signer-ai","resources":{"hostingSite":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_f59656a6-20d9-4175-92c2-1a3f0b734263"}
+[debug] [2024-03-07T06:50:50.091Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites pageToken=&pageSize=10
+[debug] [2024-03-07T06:50:51.547Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:50:51.547Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:50:51.549Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 
+[debug] [2024-03-07T06:50:52.161Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:50:52.161Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:50:52.162Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config [none]
+[debug] [2024-03-07T06:50:53.799Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config 200
+[debug] [2024-03-07T06:50:53.800Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config {"projectId":"signer-ai","appId":"1:644854045223:web:5fafd95c1dcd0b26f6cc02","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBImiIXCkcT8WvTPshqyZ-pNd0-B0tqLvE","authDomain":"signer-ai.firebaseapp.com","messagingSenderId":"644854045223","measurementId":"G-JQRVC3ZZ5M"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-07T06:50:58.006Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T06:50:59.329Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T06:50:59.330Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/profile/page.tsx
+68:6  Warning: React Hook useEffect has missing dependencies: 'getProfileData' and 'getReviews'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/12) ...
+
+[info] { data: undefined, status: 'loading', update: [Function: update] }
+
+[info]    Generating static pages (3/12) 
+
+[info]    Generating static pages (6/12) 
+ex [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at Object.eP [as staticGenerationBailout] (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29358)
+    at n (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:33712)
+    at Object.get (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:34359)
+    at d (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/server/app/api/profile/review/route.js:1:1673)
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42490
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/server/lib/trace/tracer.js:133:36
+    at NoopContextManager.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+  description: "Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+
+[info]    Generating static pages (9/12) 
+
+[info]  ✓ Generating static pages (12/12) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    11.3 kB         141 kB
+├ ○ /_not-found                          882 B          85.1 kB
+├ λ /api/auth/[...nextauth]              0 B                0 B
+├ λ /api/edgestore/[...edgestore]        0 B                0 B
+├ λ /api/find                            0 B                0 B
+├ λ /api/profile                         0 B                0 B
+├ λ /api/profile/review                  0 B                0 B
+├ λ /api/reviews                         0 B                0 B
+├ ○ /login                               2.07 kB         104 kB
+├ ○ /profile                             2.88 kB         129 kB
+└ ○ /reviews                             10.4 kB         155 kB
++ First Load JS shared by all            84.2 kB
+  ├ chunks/69-72e762238a9bf3cc.js        28.9 kB
+  ├ chunks/fd9d1056-76286ddac84065c4.js  53.4 kB
+  └ other shared chunks (total)          1.97 kB
+
+
+ƒ Middleware                             40.2 kB
+
+[info] 
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • middleware
+[info]  • non-static component /api/auth/[...nextauth]/route
+[info]  • non-static component /api/edgestore/[...edgestore]/route
+[info]  • non-static component /api/find/route
+[info]  • non-static component /api/profile/review/route
+[debug] [2024-03-07T06:51:16.259Z]  • non-static component /api/reviews/route
+[debug] [2024-03-07T06:51:16.259Z]  • non-static component /api/profile/route
+[info]  • and 2 other reasons, use --debug to see more
+[info] 
+[debug] [2024-03-07T06:51:16.275Z] skipping /login due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:51:16.275Z] skipping / due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:51:16.275Z] skipping /profile due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:51:16.291Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T06:51:17.455Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T06:51:17.455Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-03-07T06:51:57.518Z] ----------------------------------------------------------------------
+[debug] [2024-03-07T06:51:57.519Z] Command:       /home/snehendu/.nvm/versions/node/v20.11.0/bin/node /home/snehendu/.nvm/versions/node/v20.11.0/bin/firebase deploy
+[debug] [2024-03-07T06:51:57.520Z] CLI Version:   13.4.0
+[debug] [2024-03-07T06:51:57.520Z] Platform:      linux
+[debug] [2024-03-07T06:51:57.520Z] Node Version:  v20.11.0
+[debug] [2024-03-07T06:51:57.520Z] Time:          Thu Mar 07 2024 12:21:57 GMT+0530 (India Standard Time)
+[debug] [2024-03-07T06:51:57.520Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-07T06:51:57.569Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T06:51:57.570Z] > authorizing via signed-in user (roysnehendu1029@gmail.com)
+[debug] [2024-03-07T06:51:57.570Z] [iam] checking project signer-ai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-07T06:51:57.571Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions [none]
+[debug] [2024-03-07T06:51:57.571Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:51:57.571Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:51:59.443Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions 200
+[debug] [2024-03-07T06:51:59.443Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:51:59.444Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai [none]
+[debug] [2024-03-07T06:52:00.048Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai 200
+[debug] [2024-03-07T06:52:00.048Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai {"projectId":"signer-ai","projectNumber":"644854045223","displayName":"signer-ai","name":"projects/signer-ai","resources":{"hostingSite":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_f59656a6-20d9-4175-92c2-1a3f0b734263"}
+[debug] [2024-03-07T06:52:01.926Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites pageToken=&pageSize=10
+[debug] [2024-03-07T06:52:03.109Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:52:03.110Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:52:03.112Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 
+[debug] [2024-03-07T06:52:03.628Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:52:03.629Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:52:03.630Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config [none]
+[debug] [2024-03-07T06:52:05.273Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config 200
+[debug] [2024-03-07T06:52:05.274Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config {"projectId":"signer-ai","appId":"1:644854045223:web:5fafd95c1dcd0b26f6cc02","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBImiIXCkcT8WvTPshqyZ-pNd0-B0tqLvE","authDomain":"signer-ai.firebaseapp.com","messagingSenderId":"644854045223","measurementId":"G-JQRVC3ZZ5M"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-07T06:52:09.864Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T06:52:11.009Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T06:52:11.009Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/profile/page.tsx
+68:6  Warning: React Hook useEffect has missing dependencies: 'getProfileData' and 'getReviews'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/12) ...
+
+[info]    Generating static pages (3/12) 
+
+[info]    Generating static pages (6/12) 
+ex [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at Object.eP [as staticGenerationBailout] (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29358)
+    at n (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:33712)
+    at Object.get (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:34359)
+    at d (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/server/app/api/profile/review/route.js:1:1673)
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42490
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/server/lib/trace/tracer.js:133:36
+    at NoopContextManager.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+  description: "Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+
+[info] { data: undefined, status: 'loading', update: [Function: update] }
+   Generating static pages (9/12) 
+
+[info]  ✓ Generating static pages (12/12) 
+
+[info]    Finalizing page optimization ...
+
+[info]    Collecting build traces ...
+
+[info] 
+
+[info] Route (app)                              Size     First Load JS
+┌ ○ /                                    11.3 kB         141 kB
+├ ○ /_not-found                          882 B          85.1 kB
+├ λ /api/auth/[...nextauth]              0 B                0 B
+├ λ /api/edgestore/[...edgestore]        0 B                0 B
+├ λ /api/find                            0 B                0 B
+├ λ /api/profile                         0 B                0 B
+├ λ /api/profile/review                  0 B                0 B
+├ λ /api/reviews                         0 B                0 B
+├ ○ /login                               2.07 kB         104 kB
+├ ○ /profile                             2.88 kB         129 kB
+└ ○ /reviews                             10.4 kB         155 kB
++ First Load JS shared by all            84.2 kB
+  ├ chunks/69-72e762238a9bf3cc.js        28.9 kB
+  ├ chunks/fd9d1056-76286ddac84065c4.js  53.4 kB
+  └ other shared chunks (total)          1.97 kB
+
+
+ƒ Middleware                             40.2 kB
+
+○  (Static)   prerendered as static content
+λ  (Dynamic)  server-rendered on demand using Node.js
+
+
+[info] Building a Cloud Function to run this application. This is needed due to:
+[info]  • middleware
+[info]  • non-static component /api/profile/review/route
+[info]  • non-static component /api/auth/[...nextauth]/route
+[info]  • non-static component /api/reviews/route
+[info]  • non-static component /api/profile/route
+[debug] [2024-03-07T06:52:26.542Z]  • non-static component /api/find/route
+[debug] [2024-03-07T06:52:26.542Z]  • non-static component /api/edgestore/[...edgestore]/route
+[info]  • and 2 other reasons, use --debug to see more
+[info] 
+[debug] [2024-03-07T06:52:26.557Z] skipping /profile due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:52:26.557Z] skipping /login due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:52:26.557Z] skipping / due to it matching an unsupported rewrite/redirect/header or middlware
+[debug] [2024-03-07T06:52:26.573Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T06:52:27.699Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T06:52:27.699Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[debug] [2024-03-07T06:52:34.455Z] [web frameworks] effective firebase.json:  {
+  "hosting": [
+    {
+      "source": ".",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "frameworksBackend": {
+        "region": "us-east1"
+      },
+      "site": "signer-ai",
+      "rewrites": [
+        {
+          "source": "/**",
+          "function": {
+            "functionId": "ssrsignerai",
+            "region": "us-east1",
+            "pinTag": true
+          }
+        }
+      ],
+      "redirects": [],
+      "headers": [
+        {
+          "source": "/favicon.ico",
+          "headers": [
+            {
+              "key": "cache-control",
+              "value": "public, max-age=0, must-revalidate"
+            },
+            {
+              "key": "content-type",
+              "value": "image/x-icon"
+            },
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+            }
+          ]
+        },
+        {
+          "source": "/profile",
+          "headers": [
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/profile/layout,_N_T_/profile/page,_N_T_/profile"
+            }
+          ]
+        },
+        {
+          "source": "/reviews",
+          "headers": [
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/reviews/layout,_N_T_/reviews/page,_N_T_/reviews"
+            }
+          ]
+        },
+        {
+          "source": "/login",
+          "headers": [
+            {
+              "key": "x-next-cache-tags",
+              "value": "_N_T_/layout,_N_T_/login/layout,_N_T_/login/page,_N_T_/login"
+            }
+          ]
+        },
+        {
+          "source": "/**/*.[jt]s",
+          "headers": [
+            {
+              "key": "Set-Cookie",
+              "value": "__FIREBASE_DEFAULTS__=eyJjb25maWciOnsicHJvamVjdElkIjoic2lnbmVyLWFpIiwiYXBwSWQiOiIxOjY0NDg1NDA0NTIyMzp3ZWI6NWZhZmQ5NWMxZGNkMGIyNmY2Y2MwMiIsInN0b3JhZ2VCdWNrZXQiOiJzaWduZXItYWkuYXBwc3BvdC5jb20iLCJsb2NhdGlvbklkIjoiYXNpYS1zb3V0aDEiLCJhcGlLZXkiOiJBSXphU3lCSW1pSVhDa2NUOFd2VFBzaHF5Wi1wTmQwLUIwdHFMdkUiLCJhdXRoRG9tYWluIjoic2lnbmVyLWFpLmZpcmViYXNlYXBwLmNvbSIsIm1lc3NhZ2luZ1NlbmRlcklkIjoiNjQ0ODU0MDQ1MjIzIiwibWVhc3VyZW1lbnRJZCI6IkctSlFSVkMzWlo1TSJ9LCJfYXV0aFRva2VuU3luY1VSTCI6Ii9fX3Nlc3Npb24ifQ; SameSite=Strict; Expires=2026-01-30T17:32:34.455Z; Path=/;"
+            }
+          ]
+        }
+      ],
+      "cleanUrls": true,
+      "trailingSlash": false,
+      "public": ".firebase/signer-ai/hosting",
+      "webFramework": "next_ssr"
+    }
+  ],
+  "functions": [
+    {
+      "source": ".firebase/signer-ai/functions",
+      "codebase": "firebase-frameworks-signer-ai"
+    }
+  ]
+}
+[debug] [2024-03-07T06:52:34.455Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T06:52:34.455Z] > authorizing via signed-in user (roysnehendu1029@gmail.com)
+[debug] [2024-03-07T06:52:34.455Z] [iam] checking project signer-ai for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2024-03-07T06:52:34.456Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions [none]
+[debug] [2024-03-07T06:52:34.456Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:52:34.456Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2024-03-07T06:52:36.198Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions 200
+[debug] [2024-03-07T06:52:36.199Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'signer-ai'...
+[info] 
+[info] i  deploying functions, hosting 
+[debug] [2024-03-07T06:52:36.205Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai [none]
+[debug] [2024-03-07T06:52:36.814Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai 200
+[debug] [2024-03-07T06:52:36.815Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai {"projectId":"signer-ai","projectNumber":"644854045223","displayName":"signer-ai","name":"projects/signer-ai","resources":{"hostingSite":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_f59656a6-20d9-4175-92c2-1a3f0b734263"}
+[info] i  functions: preparing codebase firebase-frameworks-signer-ai for deployment 
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[info] i  artifactregistry: ensuring required API artifactregistry.googleapis.com is enabled... 
+[debug] [2024-03-07T06:52:36.823Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-03-07T06:52:36.823Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:52:36.828Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-03-07T06:52:36.829Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:52:36.834Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudbuild.googleapis.com [none]
+[debug] [2024-03-07T06:52:36.834Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudbuild.googleapis.com x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:52:36.838Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/artifactregistry.googleapis.com [none]
+[debug] [2024-03-07T06:52:36.839Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/artifactregistry.googleapis.com x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:52:38.925Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/runtimeconfig.googleapis.com 200
+[debug] [2024-03-07T06:52:38.926Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-03-07T06:52:38.927Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudbuild.googleapis.com 200
+[debug] [2024-03-07T06:52:38.927Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudbuild.googleapis.com [omitted]
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2024-03-07T06:52:38.928Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/artifactregistry.googleapis.com 200
+[debug] [2024-03-07T06:52:38.928Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/artifactregistry.googleapis.com [omitted]
+[info] ✔  artifactregistry: required API artifactregistry.googleapis.com is enabled 
+[debug] [2024-03-07T06:52:38.929Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudfunctions.googleapis.com 200
+[debug] [2024-03-07T06:52:38.929Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/signer-ai/services/cloudfunctions.googleapis.com [omitted]
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2024-03-07T06:52:38.929Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/adminSdkConfig [none]
+[debug] [2024-03-07T06:52:40.455Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/adminSdkConfig 200
+[debug] [2024-03-07T06:52:40.456Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/adminSdkConfig {"projectId":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"}
+[debug] [2024-03-07T06:52:40.457Z] >>> [apiv2][query] GET https://runtimeconfig.googleapis.com/v1beta1/projects/signer-ai/configs [none]
+[debug] [2024-03-07T06:52:42.157Z] <<< [apiv2][status] GET https://runtimeconfig.googleapis.com/v1beta1/projects/signer-ai/configs 200
+[debug] [2024-03-07T06:52:42.157Z] <<< [apiv2][body] GET https://runtimeconfig.googleapis.com/v1beta1/projects/signer-ai/configs {}
+[debug] [2024-03-07T06:52:42.161Z] Validating nodejs source
+[debug] [2024-03-07T06:52:44.286Z] > [functions] package.json contents: {
+  "name": "nextjs-signer-ai",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@edgestore/react": "^0.1.6",
+    "@edgestore/server": "^0.1.6",
+    "@google/generative-ai": "^0.2.1",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-icons": "^1.3.0",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@radix-ui/react-toast": "^1.1.5",
+    "axios": "^1.6.7",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.0",
+    "date-fns": "^3.3.1",
+    "firebase": "^10.8.0",
+    "lucide-react": "^0.334.0",
+    "next": "14.1.0",
+    "next-auth": "^4.24.6",
+    "next-themes": "^0.2.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss-animate": "^1.0.7",
+    "zod": "^3.22.4",
+    "firebase-frameworks": "^0.11.0",
+    "firebase-functions": "^4.5.0",
+    "firebase-admin": "^11.11.1"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "20"
+  }
+}
+[debug] [2024-03-07T06:52:44.286Z] Building nodejs source
+[info] i  functions: Loading and analyzing source code for codebase firebase-frameworks-signer-ai to determine what to deploy 
+[debug] [2024-03-07T06:52:44.287Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-03-07T06:52:44.290Z] Found firebase-functions binary at '/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.firebase/signer-ai/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8013
+
+[debug] [2024-03-07T06:52:44.512Z] Got response from /__/functions.yaml {"endpoints":{"ssrsignerai":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","region":["us-east1"],"labels":{},"httpsTrigger":{},"entryPoint":"ssrsignerai"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[info] i  functions: Loaded environment variables from .env. 
+[info] i  functions: preparing .firebase/signer-ai/functions directory for uploading... 
+[debug] [2024-03-07T06:54:39.064Z] ----------------------------------------------------------------------
+[debug] [2024-03-07T06:54:39.066Z] Command:       /home/snehendu/.nvm/versions/node/v20.11.0/bin/node /home/snehendu/.nvm/versions/node/v20.11.0/bin/firebase deploy
+[debug] [2024-03-07T06:54:39.066Z] CLI Version:   13.4.0
+[debug] [2024-03-07T06:54:39.067Z] Platform:      linux
+[debug] [2024-03-07T06:54:39.067Z] Node Version:  v20.11.0
+[debug] [2024-03-07T06:54:39.067Z] Time:          Thu Mar 07 2024 12:24:39 GMT+0530 (India Standard Time)
+[debug] [2024-03-07T06:54:39.067Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-07T06:54:39.124Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T06:54:39.124Z] > authorizing via signed-in user (roysnehendu1029@gmail.com)
+[debug] [2024-03-07T06:54:39.124Z] [iam] checking project signer-ai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-07T06:54:39.126Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions [none]
+[debug] [2024-03-07T06:54:39.126Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T06:54:39.126Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:54:40.844Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions 200
+[debug] [2024-03-07T06:54:40.845Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T06:54:40.848Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai [none]
+[debug] [2024-03-07T06:54:41.635Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai 200
+[debug] [2024-03-07T06:54:41.635Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai {"projectId":"signer-ai","projectNumber":"644854045223","displayName":"signer-ai","name":"projects/signer-ai","resources":{"hostingSite":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_f59656a6-20d9-4175-92c2-1a3f0b734263"}
+[debug] [2024-03-07T06:54:43.595Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites pageToken=&pageSize=10
+[debug] [2024-03-07T06:54:44.787Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:54:44.788Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:54:44.788Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 
+[debug] [2024-03-07T06:54:45.325Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T06:54:45.326Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T06:54:45.327Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config [none]
+[debug] [2024-03-07T06:54:47.064Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config 200
+[debug] [2024-03-07T06:54:47.065Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config {"projectId":"signer-ai","appId":"1:644854045223:web:5fafd95c1dcd0b26f6cc02","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBImiIXCkcT8WvTPshqyZ-pNd0-B0tqLvE","authDomain":"signer-ai.firebaseapp.com","messagingSenderId":"644854045223","measurementId":"G-JQRVC3ZZ5M"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-07T06:54:51.197Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T06:54:52.318Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T06:54:52.318Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+./src/app/page.tsx
+46:17  Warning: Assignments to the 'session' variable from inside React Hook React.useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside React.useEffect.  react-hooks/exhaustive-deps
+
+./src/app/profile/page.tsx
+68:6  Warning: React Hook useEffect has missing dependencies: 'getProfileData' and 'getReviews'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[info]    Collecting page data ...
+
+[info]    Generating static pages (0/12) ...
+
+[info] ex [Error]: Dynamic server usage: Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error
+    at Object.eP [as staticGenerationBailout] (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:29358)
+    at n (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:33712)
+    at Object.get (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:34359)
+    at d (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/server/app/api/profile/review/route.js:1:1673)
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-route.runtime.prod.js:6:42490
+    at /media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/server/lib/trace/tracer.js:133:36
+    at NoopContextManager.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:7062)
+    at ContextAPI.with (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:518)
+    at NoopTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18093)
+    at ProxyTracer.startActiveSpan (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/@opentelemetry/api/index.js:1:18854) {
+  description: "Page couldn't be rendered statically because it used `nextUrl.searchParams`. See more info here: https://nextjs.org/docs/messages/dynamic-server-error",
+  digest: 'DYNAMIC_SERVER_USAGE'
+}
+
+[info]    Generating static pages (3/12) 
+
+[info]    Generating static pages (6/12) 
+
+[info] TypeError: Cannot read properties of null (reading 'status')
+    at eG (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/server/app/page.js:11:28539)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47419)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64674)
+    at nI (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46806)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47570)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61663)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64674)
+    at nB (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67657)
+    at nF (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:66824)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64990)
+
+Error occurred prerendering page "/". Read more: https://nextjs.org/docs/messages/prerender-error
+
+TypeError: Cannot read properties of null (reading 'status')
+    at eG (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/server/app/page.js:11:28539)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47419)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64674)
+    at nI (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:46806)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:47570)
+    at nM (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:61663)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64674)
+    at nB (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:67657)
+    at nF (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:66824)
+    at nN (/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/node_modules/next/dist/compiled/next-server/app-page.runtime.prod.js:12:64990)
+
+[info]    Generating static pages (9/12) 
+
+[info]  ✓ Generating static pages (12/12) 
+
+[info] 
+
+[info] > Export encountered errors on following paths:
+	/page: /
+
+[debug] [2024-03-07T06:55:03.127Z] Error: ENOENT: no such file or directory, open '/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2024-03-07T07:03:26.758Z] ----------------------------------------------------------------------
+[debug] [2024-03-07T07:03:26.760Z] Command:       /home/snehendu/.nvm/versions/node/v20.11.0/bin/node /home/snehendu/.nvm/versions/node/v20.11.0/bin/firebase deploy
+[debug] [2024-03-07T07:03:26.760Z] CLI Version:   13.4.0
+[debug] [2024-03-07T07:03:26.760Z] Platform:      linux
+[debug] [2024-03-07T07:03:26.761Z] Node Version:  v20.11.0
+[debug] [2024-03-07T07:03:26.761Z] Time:          Thu Mar 07 2024 12:33:26 GMT+0530 (India Standard Time)
+[debug] [2024-03-07T07:03:26.761Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-07T07:03:26.812Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-07T07:03:26.812Z] > authorizing via signed-in user (roysnehendu1029@gmail.com)
+[debug] [2024-03-07T07:03:26.813Z] [iam] checking project signer-ai for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-03-07T07:03:26.814Z] > refreshing access token with scopes: []
+[debug] [2024-03-07T07:03:26.815Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-03-07T07:03:26.815Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-07T07:03:27.193Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-03-07T07:03:27.194Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-03-07T07:03:27.213Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions [none]
+[debug] [2024-03-07T07:03:27.213Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions x-goog-quota-user=projects/signer-ai
+[debug] [2024-03-07T07:03:27.214Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T07:03:28.820Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions 200
+[debug] [2024-03-07T07:03:28.820Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/signer-ai:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-03-07T07:03:28.820Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai [none]
+[debug] [2024-03-07T07:03:29.539Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai 200
+[debug] [2024-03-07T07:03:29.539Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai {"projectId":"signer-ai","projectNumber":"644854045223","displayName":"signer-ai","name":"projects/signer-ai","resources":{"hostingSite":"signer-ai","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1"},"state":"ACTIVE","etag":"1_f59656a6-20d9-4175-92c2-1a3f0b734263"}
+[debug] [2024-03-07T07:03:31.585Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites pageToken=&pageSize=10
+[debug] [2024-03-07T07:03:32.921Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T07:03:32.921Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T07:03:32.924Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 
+[debug] [2024-03-07T07:03:33.429Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites 200
+[debug] [2024-03-07T07:03:33.429Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites {"sites":[{"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-03-07T07:03:33.430Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config [none]
+[debug] [2024-03-07T07:03:35.067Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config 200
+[debug] [2024-03-07T07:03:35.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/signer-ai/webApps/-/config {"projectId":"signer-ai","appId":"1:644854045223:web:5fafd95c1dcd0b26f6cc02","storageBucket":"signer-ai.appspot.com","locationId":"asia-south1","apiKey":"AIzaSyBImiIXCkcT8WvTPshqyZ-pNd0-B0tqLvE","authDomain":"signer-ai.firebaseapp.com","messagingSenderId":"644854045223","measurementId":"G-JQRVC3ZZ5M"}
+[info] 
+   Thank you for trying our early preview of Next.js support on Firebase Hosting.
+   During the preview, support is best-effort and breaking changes can be expected. Proceed with caution.
+   The integration is known to work with Next.js version 12 - 14.0. You may encounter errors.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/nextjs
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2024-03-07T07:03:39.704Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai [none]
+[debug] [2024-03-07T07:03:41.003Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai 200
+[debug] [2024-03-07T07:03:41.003Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/signer-ai/sites/signer-ai {"name":"projects/signer-ai/sites/signer-ai","defaultUrl":"https://signer-ai.web.app","type":"DEFAULT_SITE"}
+[info]    ▲ Next.js 14.1.0
+
+[info]    - Environments: .env
+
+
+[info]    Creating an optimized production build ...
+
+[info] Compiler edge-server unexpectedly exited with code: null and signal: SIGTERM
+
+[info]  ✓ Compiled successfully
+
+[info]    Linting and checking validity of types ...
+
+[info] 
+Failed to compile.
+
+[info] 
+./src/app/page.tsx
+46:17  Warning: Assignments to the 'session' variable from inside React Hook React.useEffect will be lost after each render. To preserve the value over time, store it in a useRef Hook and keep the mutable value in the '.current' property. Otherwise, you can move this variable directly inside React.useEffect.  react-hooks/exhaustive-deps
+46:23  Error: React Hook "useSession" is called in function "setSession" that is neither a React function component nor a custom React Hook function. React component names must start with an uppercase letter. React Hook names must start with the word "use".  react-hooks/rules-of-hooks
+
+./src/app/profile/page.tsx
+68:6  Warning: React Hook useEffect has missing dependencies: 'getProfileData' and 'getReviews'. Either include them or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+
+[debug] [2024-03-07T07:03:50.775Z] Error: ENOENT: no such file or directory, open '/media/snehendu/Roy/Developement/Freelance/Signer AI/signer-ai-fiverr/.next/export-marker.json'
+[error] 
+[error] Error: An unexpected error has occurred.
