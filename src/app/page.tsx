@@ -43,6 +43,8 @@ export default function Home() {
 
   React.useEffect(()=>{console.log(loading)}, [loading])
 
+  console.log(data)
+
   return (
     <>
         <div className="lg:w-1/2 md:w-[70vw] w-[90vw] flex" >

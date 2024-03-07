@@ -1,7 +1,6 @@
 import React from 'react'
 import { testimoial, toldBy } from '@/helper/constants'
 
-
 export default function AuthLayout({children, title, description}: Readonly<{children: React.ReactNode, btnName: string, title: string, description: string, href: string}> ) {
   return (
     <>

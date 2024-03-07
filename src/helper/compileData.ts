@@ -1,5 +1,5 @@
 import { getPlace } from "@/helper/google-places-search";
-import axios, { all } from "axios";
+import axios from "axios";
 import { eventList, places } from "@/helper/constants";
 
 const getEvent = async ({ event, city }: any) => {
@@ -50,18 +50,17 @@ const getPlacesObj = async (city: string) => {
     for (let i = 0; i < places.length; i++) {
       const place = places[i];
       const m: any = await getPlace({ place, city });
-      allPlaces[Object.keys(m)[0]] = Object.values(m)[0];
+      if (m) {
+        allPlaces[Object.keys(m)[0]] = Object.values(m)[0];
+      }
       console.log(allPlaces)
     }
-
 
     return allPlaces;
   } catch (err: any) {
     console.log(err);
   }
 };
-
-
 
 export async function getAllData({city}:any) {
     try {

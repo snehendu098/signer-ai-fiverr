@@ -28,6 +28,7 @@ const PlaceCard = ({data}:any) => {
 }
 
 const AllPlaces = ({places}:any) => {
+  console.log(places)
   const keys = Object.keys((places))
   return <div className='w-full grid grid-cols-1 gap-4 my-4' >
     {keys.map((e:any) => (
