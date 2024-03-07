@@ -13,22 +13,6 @@ export const authOptions = {
       credentials: {},
       async authorize(credentials): Promise<any> {
 
-        if ((credentials as any).type === "signup") {
-          return await createUserWithEmailAndPassword(
-            auth,
-            (credentials as any).email || "",
-            (credentials as any).password || "",
-          )
-            .then((userCredentials) => {
-              if (userCredentials.user) {
-                saveToDB(userCredentials.user.providerData[0].email);
-                return { email: userCredentials.user.providerData[0].email };
-              } else {
-                return null;
-              }
-            })
-            .catch((err) => console.log("err", err));
-        } else {
           return await signInWithEmailAndPassword(
             auth,
             (credentials as any).email || "",
@@ -43,7 +27,6 @@ export const authOptions = {
               }
             })
             .catch((err) => console.log("err", err));
-        }
       },
     }),
   ],
