@@ -1,6 +1,5 @@
 import { getPlace } from "@/helper/google-places-search";
-import axios from "axios";
-import { NextResponse, NextRequest } from "next/server";
+import axios, { all } from "axios";
 import { eventList, places } from "@/helper/constants";
 
 const getEvent = async ({ event, city }: any) => {
@@ -13,7 +12,7 @@ const getEvent = async ({ event, city }: any) => {
       date: "today",
     },
     headers: {
-      "X-RapidAPI-Key": process.env.RAPID_API_KEY!,
+      "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY!,
       "X-RapidAPI-Host": "real-time-events-search.p.rapidapi.com",
     },
   };
@@ -36,6 +35,7 @@ const getEventObj = async (city: any) => {
       const event = await getEvent({ event: e, city });
       events[e] = event;
     }
+    console.log(events)
 
     return events;
   } catch (err) {
@@ -51,23 +51,27 @@ const getPlacesObj = async (city: string) => {
       const place = places[i];
       const m: any = await getPlace({ place, city });
       allPlaces[Object.keys(m)[0]] = Object.values(m)[0];
+      console.log(allPlaces)
     }
+
+
     return allPlaces;
   } catch (err: any) {
     console.log(err);
   }
 };
 
-export async function POST(request: NextRequest) {
-  try {
-    const { city } = await request.json();
 
-    const events = await getEventObj(city);
-    const places = await getPlacesObj(city);
 
-    return NextResponse.json({ events, places });
-  } catch (err: any) {
-    console.log(err);
-    return NextResponse.json({ error: err.message }, { status: 400 });
+export async function getAllData({city}:any) {
+    try {
+  
+      const events = await getEventObj(city);
+      const places = await getPlacesObj(city);
+  
+      return { data: {events, places} }
+    } catch (err: any) {
+      console.log(err);
+      return {data: "Error Occurred"}
+    }
   }
-}

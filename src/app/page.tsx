@@ -14,6 +14,7 @@ import { Tabs, TabsList } from "@/components/ui/tabs";
 import { TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import AllPlaces from "@/components/core/PlacesCard";
 import { Loader2 as ReloadIcon } from "lucide-react";
+import { getAllData } from "@/helper/compileData";
 
 export default function Home() {
 
@@ -26,7 +27,7 @@ export default function Home() {
   const handleSearch = async () => {
     try {
       setLoading(true)
-      const response = await axios.post("/api/find", {city})
+      const response = await getAllData({city})
       console.log(response)
       setData(response.data)
 

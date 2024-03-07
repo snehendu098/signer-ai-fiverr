@@ -8,7 +8,7 @@ import {
 } from "@google/generative-ai";
 
 const MODEL_NAME = "gemini-1.0-pro";
-const API_KEY = process.env.API_KEY!;
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY!;
 
 export async function getPlace(props: any) {
   try {
