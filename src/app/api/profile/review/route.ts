@@ -2,7 +2,7 @@ import { db } from "@/app/firebase";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { NextRequest, NextResponse } from "next/server";
 
-// Define an interface for the review data structure
+// Define an interface for the review data structure for the reviews
 interface ReviewData {
   email: string;
   places: string;
@@ -16,8 +16,9 @@ const getData = async (req: NextRequest) => {
     const searchParams = req.nextUrl.searchParams;
     const email = searchParams.get("email");
 
+    // get the collections and data from the database
     const docSnap = await getDocs(
-      query(collection(db, "reviews"), where("email", "==", email))
+      query(collection(db, "reviews"), where("email", "==", email)),
     );
 
     // Type the data as a Record<string, ReviewData>

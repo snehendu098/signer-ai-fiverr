@@ -7,7 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 
 import * as React from "react"
-import axios from "axios";
 import { toast } from "@/components/ui/use-toast";
 import AllEvents from "@/components/core/EventsCard";
 import { Tabs, TabsList } from "@/components/ui/tabs";
@@ -42,8 +41,6 @@ export default function Home() {
   const disabled = session.status !== "authenticated"
 
   React.useEffect(()=>{console.log(loading)}, [loading])
-
-  console.log(data)
 
   return (
     <>
