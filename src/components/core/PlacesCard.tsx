@@ -22,7 +22,7 @@ const PlaceCard = ({data}:any) => {
     }
     </div>
     <div>
-      <Button asChild><Link target='_blank' href={`https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${data?.latitude}%2C${data?.longitude}`} >Open In Maps</Link></Button>
+      <Button asChild><Link target='_blank' href={`https://www.google.com/maps/search/?api=1&query=${data?.name.replaceAll(" ", "+")}`} >Open In Maps</Link></Button>
     </div>
   </div>
 }
