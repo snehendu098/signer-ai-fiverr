@@ -10,6 +10,7 @@ const getEvent = async ({ event, city }: any) => {
       query: `${event} in ${city}`,
       start: "0",
       date: "today",
+      is_virtual: false
     },
     headers: {
       "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API_KEY!,

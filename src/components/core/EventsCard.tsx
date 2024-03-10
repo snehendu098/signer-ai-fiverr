@@ -1,13 +1,8 @@
 "use client"
-import Image from 'next/image'
 import React from 'react'
-import { format, getUnixTime } from 'date-fns'
+import { format } from 'date-fns'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-
-const imageStyles = {
-  maxHeight: '40vw'
-}
 
 const dateFormatter = (date:any) => {
   if (date!=="Invalid Date") {
@@ -19,16 +14,10 @@ const dateFormatter = (date:any) => {
 
 const EventsCard = ({data}:any) => {
 
-  const startTime = new Date(data?.start_time)
-  const endTime = new Date(data?.end_time)
-
   const handleClick = () => {
     console.log(data)
   }
 
-
-
-  const url = `https://calendar.google.com/calendar/r/eventedit?text=${data?.name?.replaceAll(" ", "+")}&dates=${dateFormatter(startTime)}/${dateFormatter(endTime)}`;
 
   return <div onClick={handleClick} className='bg-muted border gap-1 grid grid-cols-1 p-4 rounded-md' >
     {/*<div className='w-full max-h-90' >
@@ -37,10 +26,13 @@ const EventsCard = ({data}:any) => {
     */}
     <p className='text-lg font-bold' >{data?.name}</p>
     <p className='text-sm text-muted-foreground text-ellipsis line-clamp-2 max-w-fit' >{data?.description}</p>
-    <div className='text-xs mt-4 font-bold' >{format(new Date(data?.start_time), 'h:mm a')} to {format(new Date(data?.end_time), "h:mm a")}</div>
-    <p className='text-xs font-semibold text-muted-foreground'>Venue: {data?.venue?.full_address || "Not Provided"}</p>
+    {data?.start_time && data?.end_time &&
+    <div className='text-xs mt-4 font-bold' >{format(new Date(data?.start_time), 'h:mm a')} to {format(new Date(data?.end_time), "h:mm a")}</div>}
+    {/* <p className='text-xs font-semibold text-muted-foreground'>Venue: {data?.venue?.full_address || "Not Provided"}</p> */}
     <div className='mt-4'>
-    <Button asChild><Link href={url} target='_blank' >Add to Calendar</Link></Button>
+    {
+      data?.link && <Button asChild><Link href={data?.link} target='_blank' >See Details</Link></Button>
+    }
     </div>
   </div>
 }
