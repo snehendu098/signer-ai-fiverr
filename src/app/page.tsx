@@ -21,6 +21,7 @@ export default function Home() {
   const [loading, setLoading] = React.useState<boolean>(false)
   const [data, setData] = React.useState<any>(null)
   const session:any = useSession()
+  const [savedCity, setSavedCity] = React.useState<string>("")
   
 
   const handleSearch = async () => {
@@ -32,6 +33,7 @@ export default function Home() {
 
       if (typeof window !== "undefined" && window.localStorage) {
         localStorage.setItem('data', JSON.stringify(response.data))
+        localStorage.setItem('city', city)
       }
 
     } catch (err) {
@@ -48,8 +50,10 @@ export default function Home() {
   React.useEffect(() => {
     if (typeof window !== "undefined" && window.localStorage) {
       const dat:any = localStorage.getItem("data")
+      const cit:any = localStorage.getItem("city")
       if (dat) {
         setData(JSON.parse(dat))
+        setSavedCity(cit)
       }
     }
   }, [])
@@ -73,7 +77,7 @@ export default function Home() {
               <AllEvents events={data?.events} />
             </TabsContent>
               <TabsContent value="places">
-                <AllPlaces places={data?.places} city={city} />
+                <AllPlaces places={data?.places} city={city || savedCity} />
               </TabsContent>
 
         </Tabs>
