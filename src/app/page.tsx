@@ -61,7 +61,7 @@ export default function Home() {
               <AllEvents events={data?.events} />
             </TabsContent>
               <TabsContent value="places">
-                <AllPlaces places={data?.places}/>
+                <AllPlaces places={data?.places} city={city} />
               </TabsContent>
 
         </Tabs>

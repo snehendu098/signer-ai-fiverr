@@ -1,5 +1,5 @@
-const eventList = ["Public Events", "Private Events"];
-const places = ["Shopping Malls", "Supermarket", "Farmers Market"];
+const eventList = ["Events"];
+const places = ["Shopping Malls", "Supermarket", "Farmer Markets"];
 const testimoial =
   "This tool is really great to help find where petetion signers are going";
 const toldBy = "Nico";
