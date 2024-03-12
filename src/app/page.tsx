@@ -30,6 +30,10 @@ export default function Home() {
       console.log(response)
       setData(response.data)
 
+      if (typeof window !== "undefined" && window.localStorage) {
+        localStorage.setItem('data', JSON.stringify(response.data))
+      }
+
     } catch (err) {
       console.log(err)
       toast({title: "Error Occurred"})
@@ -41,6 +45,14 @@ export default function Home() {
   const disabled = session.status !== "authenticated"
 
   React.useEffect(()=>{console.log(loading)}, [loading])
+  React.useEffect(() => {
+    if (typeof window !== "undefined" && window.localStorage) {
+      const dat:any = localStorage.getItem("data")
+      if (dat) {
+        setData(JSON.parse(dat))
+      }
+    }
+  }, [])
 
   return (
     <>
