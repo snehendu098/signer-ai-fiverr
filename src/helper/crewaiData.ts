@@ -7,7 +7,7 @@ export const getData = async ({
   city: string;
   timing: string;
 }) => {
-  const response = await axios.post("http://localhost:8000/api/ai", {
+  const response = await axios.post("https://100.25.181.227/api/ai", {
     city,
     timing,
   });
